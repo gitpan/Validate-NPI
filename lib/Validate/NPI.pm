@@ -4,7 +4,7 @@ package Validate::NPI;
 # ABSTRACT: Validates National Provider Identifier (NPI) numbers
 
 use vars qw{ $VERSION @ISA @EXPORT };
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 require Exporter;
 
@@ -50,7 +50,6 @@ sub validate_npi {
    1;
 }
 
-
 1;
 
 __END__
@@ -63,7 +62,7 @@ Validate::NPI - Validates National Provider Identifier (NPI) numbers
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -77,6 +76,10 @@ validate_npi($value.$msg)
 
 Call with a scalar value for validation and an optional array reference for an explanation
 of why validation failed.   Returns 1 (true) if the NPI validates correctly.
+
+=head1 ACKNOWLEDGEMENTS
+
+Adapted from a code fragment found at http://javatechnicals.blogspot.com/2009/03/npi-check-digit-validation-peoplecode.html
 
 =head1 AUTHOR
 
