@@ -4,7 +4,7 @@ package Validate::NPI;
 # ABSTRACT: Validates National Provider Identifier (NPI) numbers
 
 use vars qw{ $VERSION @ISA @EXPORT };
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 require Exporter;
 
@@ -62,17 +62,15 @@ Validate::NPI - Validates National Provider Identifier (NPI) numbers
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
-  $fValidated=validate_npi('1234567893');              # will return 1 (true)
+  $fValidated=validate_npi('1234567893');    # will return 1 (true)
 
 =head1 METHODS
 
-=head2 validate_npi
-
-validate_npi($value.$msg)  
+=head2 validate_npi($value,$msg)
 
 Call with a scalar value for validation and an optional array reference for an explanation
 of why validation failed.   Returns 1 (true) if the NPI validates correctly.
